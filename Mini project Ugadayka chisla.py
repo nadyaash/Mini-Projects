@@ -19,9 +19,11 @@ def goodbuy():
     goodbay_msg = 'Спасибо, что играли в числовую угадайку. Еще увидимся...'
     print(goodbay_msg)
 
+    
 # проверка на дурака.
 def is_valid(s, num):
     return s.isdigit() and 1 <= int(s) <= num
+
 
 # назначение правой границы диапазона
 def define_limit():
@@ -29,6 +31,7 @@ def define_limit():
     sleep(0.5)
     limit = int(input("введите правую границу диапазона здесь ==>  "))
     return limit
+
 
 # создание цикла с запросом на ввод варианта угадываемого числа от пользователя
 def guess_number(num):
