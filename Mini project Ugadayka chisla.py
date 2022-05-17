@@ -29,8 +29,13 @@ def is_valid(s, num):
 def define_limit():
     print(f'Назначьте правую границу диапазона, a компьютер загадает число от 1 до этого числа')
     sleep(0.5)
-    limit = int(input("введите правую границу диапазона здесь ==>  "))
-    return limit
+    while True:
+        limit = input("введите правую границу диапазона здесь ==>  ")
+        if limit.isdigit():
+            return int(limit)
+        else:
+            print('введенно не число :( ')
+            continue
 
 
 # создание цикла с запросом на ввод варианта угадываемого числа от пользователя
